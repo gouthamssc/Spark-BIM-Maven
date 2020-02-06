@@ -9,8 +9,8 @@ class DatabaseConnection {
     val devProperties = new Properties()
     devProperties.put("user", getDBUserName())
     devProperties.put("password", getDBPassword())
-    devProperties.put("sslConnection", "true")
-    devProperties.put("sslTrustStoreLocation", getDBJKSFile())
+//     devProperties.put("sslConnection", "true")
+//     devProperties.put("sslTrustStoreLocation", getDBJKSFile())
     devProperties
   }
 
