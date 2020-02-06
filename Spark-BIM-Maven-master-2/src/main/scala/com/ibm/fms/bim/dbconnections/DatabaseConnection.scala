@@ -50,7 +50,8 @@ class DatabaseConnection {
   def getDBUrl(): String = {
 
 
-    val url = "jdbc:db2://" + getDBip() + ":" + getDBport() + "/" +getDBName()
+//     val url = "jdbc:db2://" + getDBip() + ":" + getDBport() + "/" +getDBName()
+    val url =   "jdbc:db2://cap-sg-prd-4.securegateway.appdomain.cloud:19881/LP01CDA1"
 
     url
 
