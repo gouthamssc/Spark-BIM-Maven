@@ -7,7 +7,7 @@ trait SparkSessionTestWrapper {
   lazy val spark: SparkSession = {
     SparkSession
       .builder()
-      .master("local")
+      .master("local[*]")
       .appName("spark test example")
       .getOrCreate()
     spark.conf.set("spark.driver.memory", "600m");
