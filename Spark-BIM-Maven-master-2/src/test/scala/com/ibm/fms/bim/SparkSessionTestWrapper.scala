@@ -10,5 +10,6 @@ trait SparkSessionTestWrapper {
       .master("local")
       .appName("spark test example")
       .getOrCreate()
+    spark.conf.set("spark.driver.memory", "600m");
   }
 }
